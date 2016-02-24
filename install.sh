@@ -29,8 +29,13 @@ sudo add-apt-repository ppa:webupd8team/java -y
 # Atualiza a lista de pacotes
 sudo apt-get update
 
+# Atualiza a distribuição
+sudo apt-get upgrade
+
 # Array de pacotes para instalar
 programas=(
+firefox
+libreoffice
 brackets
 curl
 thunderbird
