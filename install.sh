@@ -21,10 +21,10 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-ke
 sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 
 # Brackets
-sudo add-apt-repository ppa:webupd8team/brackets
+sudo add-apt-repository ppa:webupd8team/brackets -y
 
 #Java
-sudo add-apt-repository ppa:webupd8team/java
+sudo add-apt-repository ppa:webupd8team/java -y
 
 # Atualiza a lista de pacotes
 sudo apt-get update
@@ -73,3 +73,7 @@ do
         sudo apt-get -y install "$i"
     fi
 done
+
+echo -n "Pressione qualquer tecla para sair..."
+read
+exit
