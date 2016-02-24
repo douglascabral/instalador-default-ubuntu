@@ -32,6 +32,8 @@ sudo apt-get update
 # Array de pacotes para instalar
 programas=(
 brackets
+curl
+thunderbird
 gimp
 vlc
 rsync
@@ -57,7 +59,6 @@ libav-tools
 mediainfo
 oracle-java8-installer
 oracle-java8-set-default
-curl
 )
 
 #instala cada uma das aplicações
