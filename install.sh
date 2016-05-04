@@ -21,10 +21,16 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-ke
 sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 
 # Brackets
-sudo add-apt-repository ppa:webupd8team/brackets -y
+#sudo add-apt-repository ppa:webupd8team/brackets -y
 
-#Java
+# Atom
+sudo add-apt-repository ppa:webupd8team/atom -y
+
+# Java
 sudo add-apt-repository ppa:webupd8team/java -y
+
+# Android Studio
+sudo apt-add-repository ppa:paolorotolo/android-studio -y
 
 # Atualiza a lista de pacotes
 sudo apt-get update
@@ -34,17 +40,21 @@ sudo apt-get upgrade
 
 # Array de pacotes para instalar
 programas=(
+curl
+lib32stdc++6
+lib32z1
+lib32ncurses5
+google-chrome-stable
 firefox
 libreoffice
-brackets
-curl
+#brackets
+atom
 thunderbird
 gimp
 vlc
 rsync
 grsync
 gparted
-google-chrome-stable
 spotify-client
 unzip
 g++
@@ -64,6 +74,9 @@ libav-tools
 mediainfo
 oracle-java8-installer
 oracle-java8-set-default
+virtualbox
+android-studio
+mysql-workbench
 )
 
 #instala cada uma das aplicações
